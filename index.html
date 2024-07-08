@@ -110,7 +110,17 @@
               </div>
             </div>
             <p class="py-3">
-             Thank you guys for my Birthday wishes 💝✨
+             <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Happy Birthday Ravi!" required>
+        <button type="button" onclick="showAlert()">Send</button>
+    </form>
+
+    <script>
+        function showAlert() {
+            alert('Thank you 💝✨');
+        }
+    </script>
             </p>
           </div>
         </div>

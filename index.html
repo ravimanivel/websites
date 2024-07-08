@@ -110,21 +110,52 @@
               </div>
             </div>
             <p class="py-3">
-<styles>
-.contact .php-email-form .sent-message {
-            display: none;
-            color: #ffffff;
-            background: #059652;
-            text-align: center;
-            padding: 15px;
-            margin-bottom: 24px;
-            font-weight: 600;
+             <style>
+        .contact-form {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-</styles>
-             <div class="contact">
-        <form id="myForm" class="php-email-form">
-            <input type="text" id="name" class="sent-message" name="name" value="Happy Birthday Ravi!" required>
-            <button class="button" type="button" onclick="showAlert()">Send</button>
+
+        .contact-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .contact-form input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .contact-form button[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background: #3498db;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button[type="button"]:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <form id="myForm">
+            <input type="text" id="name" name="name" value="Happy Birthday Ravi!" required>
+            <button type="button" onclick="showAlert()">Send</button>
         </form>
     </div>
 
